@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #f3f4f6, #e7e9ec);
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    z-index: 9999;
+}
+
+.name {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.address {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+.contact {
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+}
+
+.section-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.section-title:hover {
+    color: #007bff;
+    transform: scale(1.05);
+}
+
+.content {
+    padding: 10px;
+    border-left: 4px solid #007bff;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+.section:hover .content {
+    max-height: 300px; 
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.fa-envelope,
+.fa-phone {
+    margin-right: 5px;
+}
+
+.fa {
+    color: #007bff;
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-js {
+    margin-right: 5px;
+}
+.section.enlarged .content {
+    transform: scale(1.1);
+}
